@@ -66,6 +66,14 @@ body {
   font-size: 0.95rem;
 }
 
+.resume-summary {
+  max-width: 58ch;
+  margin: 0 0 18px;
+  color: var(--muted);
+  font-size: clamp(1rem, 2.1vw, 1.25rem);
+  line-height: 1.55;
+}
+
 .connect-w-me {
   margin: 0 0 18px;
   color: var(--heading-accent);

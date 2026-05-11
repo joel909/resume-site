@@ -1,0 +1,11 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="630" fill="#000000"/>
+  <rect x="54" y="54" width="1092" height="522" rx="36" fill="#0B0B0B" stroke="#1F1F1F"/>
+  <text x="96" y="174" fill="#58F795" font-family="Space Grotesk, Arial, sans-serif" font-size="72" font-weight="700" letter-spacing="8">RESUME</text>
+  <text x="96" y="286" fill="#FFFFFF" font-family="Syne, Arial, sans-serif" font-size="108" font-weight="700">Joel Joby</text>
+  <text x="96" y="364" fill="#D6D6D6" font-family="Space Grotesk, Arial, sans-serif" font-size="38" font-weight="400">Latest PDF resume with browser preview and direct download.</text>
+  <rect x="96" y="430" width="232" height="68" rx="18" fill="#0060FF"/>
+  <text x="141" y="474" fill="#FFFFFF" font-family="Space Grotesk, Arial, sans-serif" font-size="28" font-weight="700">Open Resume</text>
+  <rect x="348" y="430" width="260" height="68" rx="18" fill="#B7BFDF"/>
+  <text x="388" y="474" fill="#111111" font-family="Space Grotesk, Arial, sans-serif" font-size="28" font-weight="700">Download PDF</text>
+</svg>
