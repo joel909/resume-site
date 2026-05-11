@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resume</title>
+    <meta
+      name="description"
+      content="View and download my resume directly from this site."
+    />
+    <script>
+      window.va =
+        window.va ||
+        function () {
+          (window.vaq = window.vaq || []).push(arguments);
+        };
+    </script>
+    <!-- Replace __VERCEL_ANALYTICS_PATH__ with your Vercel project analytics path after enabling Web Analytics. -->
+    <script defer src="/__VERCEL_ANALYTICS_PATH__/script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="hero">
+        <p class="eyebrow">Resume</p>
+        <h1>Simple public resume page</h1>
+        <p class="intro">
+          This page lets people preview the PDF in the browser or download it
+          directly.
+        </p>
+        <div class="actions">
+          <a class="button button-primary" href="resume.pdf" target="_blank" rel="noreferrer">
+            Open PDF
+          </a>
+          <a class="button button-secondary" href="resume.pdf" download>
+            Download PDF
+          </a>
+        </div>
+      </header>
+
+      <main class="viewer-section">
+        <div class="viewer-header">
+          <h2>Preview</h2>
+          <p>If the embed does not load on a device, use the buttons above.</p>
+        </div>
+
+        <div class="viewer-frame">
+          <object
+            data="resume.pdf#view=FitH"
+            type="application/pdf"
+            width="100%"
+            height="100%"
+          >
+            <div class="fallback">
+              <p>Your browser could not embed the PDF.</p>
+              <a class="button button-primary" href="resume.pdf" target="_blank" rel="noreferrer">
+                Open resume.pdf
+              </a>
+            </div>
+          </object>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
