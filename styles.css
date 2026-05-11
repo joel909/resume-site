@@ -80,20 +80,42 @@ body {
   margin-bottom: 36px;
 }
 
-.connect-with-me-btn-linkdin,
-.connect-with-me-btn-github,
-.connect-with-me-btn-linkdin:hover,
-.connect-with-me-btn-github:hover {
-  transform: scale(1.04);
-}
-
 .connect-with-me-btn-linkdin {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 58px;
+  padding: 0 24px;
+  border: none;
+  border-radius: 20px;
+  color: #ffffff;
+  font-size: clamp(1rem, 2vw, 1.2rem);
+  font-weight: 700;
+  text-decoration: none;
+  transition: transform 180ms ease;
   background-color: var(--linkedin);
 }
 
 .connect-with-me-btn-github {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 58px;
+  padding: 0 24px;
+  border: none;
+  border-radius: 20px;
+  color: #111111;
+  font-size: clamp(1rem, 2vw, 1.2rem);
+  font-weight: 700;
+  text-decoration: none;
+  transition: transform 180ms ease;
   background-color: var(--github);
   color: #111111;
+}
+
+.connect-with-me-btn-linkdin:hover,
+.connect-with-me-btn-github:hover {
+  transform: scale(1.04);
 }
 
 .connect-with-me-btn-insta-text {
