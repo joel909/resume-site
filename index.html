@@ -8,6 +8,7 @@
       name="description"
       content="Joel Joby resume page with browser preview and direct PDF download."
     />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
     <script>
       window.va =
         window.va ||
@@ -26,93 +27,55 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body class="body">
-    <main class="intro-container">
-      <section class="profile-show-container">
-        <p class="hello-there">Hello There,</p>
-        <h1 class="im-joel">I'm Joel</h1>
-        <img
-          class="profile-pic"
-          src="joelmeinscrapyard.jpeg"
-          alt="Joel at Scrapyard Bengaluru"
-        />
-        <p class="profile-pic-desc">Sometimes life's gonna hit ur</p>
-        <p class="profile-pic-desc-l-1">your head with a mic</p>
-        <p class="profile-pic-desc-l-1">don't loose faith keep yapping</p>
-        <p class="profile-pic-desc-l-last">~~by Meh</p>
-      </section>
-
-      <section class="content-container">
-        <div class="copy-block">
-          <p class="decription">Okay, Yo Visitor !</p>
-          <p class="decription">
-            This page follows the same style and structure as joeljoby.com, but
-            it is focused on one job: making my resume easy to open and share.
-          </p>
-          <p class="decription">
-            If you want the clean PDF directly, use the buttons below. If you
-            want a quick look first, scroll down and read it in the embedded
-            viewer.
-          </p>
+    <main class="resume-page">
+      <section class="resume-card">
+        <p class="eyebrow">Resume</p>
+        <h1 class="connect-w-me">My Resume</h1>
+        <p class="decription-4">
+          Same dark style, same green accent, just the resume content and the
+          PDF viewer.
+        </p>
+        <div class="button-links-connect-container">
+          <a
+            class="connect-with-me-btn-linkdin"
+            href="resume.pdf"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <span class="connect-with-me-btn-insta-text">Open Resume</span>
+          </a>
+          <a class="connect-with-me-btn-github" href="resume.pdf" download>
+            <span class="connect-with-me-btn-insta-text">Download PDF</span>
+          </a>
         </div>
-
-        <div class="connect-w-me-cont">
-          <h2 class="connect-w-me">Connect W Me</h2>
-          <div class="button-links-connect-container">
-            <a
-              class="connect-with-me-btn-linkdin"
-              href="resume.pdf"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <span class="connect-with-me-btn-insta-text">Open Resume</span>
-            </a>
-            <a class="connect-with-me-btn-github" href="resume.pdf" download>
-              <span class="connect-with-me-btn-insta-text">Download PDF</span>
-            </a>
-            <a
-              class="connect-with-me-btn-mail"
-              href="mailto:me@joeljoby.com?subject=Saw%20your%20resume"
-            >
-              <span class="connect-with-me-btn-insta-text">Email Joel</span>
-            </a>
-          </div>
-        </div>
-
-        <div class="my-exp">
-          <h2 class="connect-w-me">My Resume</h2>
-          <p class="decription-4">
-            Here&apos;s the full PDF preview. On devices that do not support
-            embedded PDFs well, the open and download buttons above still work.
-          </p>
-          <div class="viewer-shell">
-            <object
-              data="resume.pdf#view=FitH"
-              type="application/pdf"
-              width="100%"
-              height="100%"
-            >
-              <div class="fallback">
-                <p class="decription-4">
-                  Your browser could not embed the PDF.
-                </p>
-                <a
-                  class="connect-with-me-btn-linkdin fallback-button"
-                  href="resume.pdf"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <span class="connect-with-me-btn-insta-text">Open resume.pdf</span>
-                </a>
-              </div>
-            </object>
-          </div>
+        <div class="viewer-shell">
+          <object
+            data="resume.pdf#view=FitH"
+            type="application/pdf"
+            width="100%"
+            height="100%"
+          >
+            <div class="fallback">
+              <p class="decription-4">
+                Your browser could not embed the PDF.
+              </p>
+              <a
+                class="connect-with-me-btn-linkdin fallback-button"
+                href="resume.pdf"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <span class="connect-with-me-btn-insta-text">Open resume.pdf</span>
+              </a>
+            </div>
+          </object>
         </div>
       </section>
     </main>
 
     <footer class="footer-cont">
       <p class="decription-1">@ 2026 Joel. All rights reserved.</p>
-      <p class="decription-1">Made with love by Joel</p>
+      <p class="decription-1">Made with ❤️ by Joel</p>
     </footer>
   </body>
 </html>

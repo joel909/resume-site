@@ -7,7 +7,6 @@
   --panel-border: rgba(255, 255, 255, 0.12);
   --linkedin: rgba(0, 64, 255, 0.932);
   --github: rgba(183, 191, 223, 0.932);
-  --mail: rgba(87, 170, 166, 0.932);
 }
 
 * {
@@ -31,76 +30,30 @@ body {
   flex-direction: column;
 }
 
-.intro-container {
-  display: flex;
+.resume-page {
   width: min(1400px, calc(100% - 40px));
   margin: 0 auto;
   padding: 36px 0 16px;
-  gap: 28px;
 }
 
-.profile-show-container {
-  flex: 0 0 360px;
+.resume-card {
+  padding-top: 10px;
 }
 
-.content-container {
-  flex: 1;
-  padding-top: 18px;
+.eyebrow {
+  margin: 0 0 12px;
+  color: var(--heading-accent);
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
 }
 
-.hello-there {
-  margin: 18px 0 0;
-  font-family: "Space Grotesk", sans-serif;
-  font-size: clamp(1.4rem, 2.5vw, 2rem);
-  text-align: center;
-}
-
-.im-joel {
-  margin: 0 0 20px;
-  font-family: "Syne", sans-serif;
-  font-size: clamp(3rem, 8vw, 5.2rem);
-  line-height: 0.94;
-  text-align: center;
-}
-
-.profile-pic {
-  display: block;
-  width: min(100%, 320px);
-  aspect-ratio: 4 / 5;
-  object-fit: cover;
-  margin: 0 auto;
-  border-radius: 36px;
-  border: 1px solid var(--panel-border);
-}
-
-.profile-pic-desc,
-.profile-pic-desc-l-1,
-.profile-pic-desc-l-last {
-  margin: 10px 0 0;
-  text-align: center;
-  font-size: 0.92rem;
-}
-
-.profile-pic-desc-l-last {
-  color: #f70707;
-}
-
-.copy-block,
-.my-exp {
-  margin-bottom: 34px;
-}
-
-.decription,
 .decription-1,
 .decription-4 {
   color: var(--muted);
   font-family: "Space Grotesk", sans-serif;
   line-height: 1.55;
-}
-
-.decription {
-  margin: 0 0 18px;
-  font-size: clamp(1rem, 2.2vw, 1.35rem);
 }
 
 .decription-4 {
@@ -129,25 +82,9 @@ body {
 
 .connect-with-me-btn-linkdin,
 .connect-with-me-btn-github,
-.connect-with-me-btn-mail {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 58px;
-  padding: 0 24px;
-  border: none;
-  border-radius: 20px;
-  color: #ffffff;
-  font-size: clamp(1rem, 2vw, 1.2rem);
-  font-weight: 700;
-  text-decoration: none;
-  transition: transform 180ms ease;
-}
-
 .connect-with-me-btn-linkdin:hover,
-.connect-with-me-btn-github:hover,
-.connect-with-me-btn-mail:hover {
-  transform: scale(1.05);
+.connect-with-me-btn-github:hover {
+  transform: scale(1.04);
 }
 
 .connect-with-me-btn-linkdin {
@@ -157,10 +94,6 @@ body {
 .connect-with-me-btn-github {
   background-color: var(--github);
   color: #111111;
-}
-
-.connect-with-me-btn-mail {
-  background-color: var(--mail);
 }
 
 .connect-with-me-btn-insta-text {
@@ -205,43 +138,13 @@ object {
 }
 
 @media (max-width: 980px) {
-  .intro-container {
-    flex-direction: column;
+  .resume-page {
     width: min(100% - 28px, 1400px);
-    gap: 12px;
-  }
-
-  .profile-show-container,
-  .content-container {
-    flex: unset;
-    width: 100%;
-  }
-
-  .content-container {
-    padding-top: 0;
-  }
-
-  .hello-there,
-  .im-joel {
-    text-align: left;
-  }
-
-  .profile-pic {
-    margin-left: 0;
-  }
-
-  .profile-pic-desc,
-  .profile-pic-desc-l-1,
-  .profile-pic-desc-l-last {
-    text-align: left;
+    padding-top: 20px;
   }
 }
 
 @media (max-width: 640px) {
-  .intro-container {
-    padding-top: 20px;
-  }
-
   .button-links-connect-container {
     flex-direction: column;
   }
